@@ -136,4 +136,4 @@ create table public.investments (
 ## Monitoring
 - Vercel Analytics for frontend
 - Supabase Dashboard for backend
-- Error tracking with Sentry (optional) 
+- Error tracking with Sentry (optional)
