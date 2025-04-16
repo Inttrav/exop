@@ -1,4 +1,6 @@
 import Image from "next/image";
+import LiveTransactions from '../components/LiveTransactions';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -72,6 +74,84 @@ export default function Home() {
           >
             Register
           </a>
+        </div>
+
+        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <div className="px-4 py-6 sm:px-0">
+            <div className="mb-8">
+              <h1 className="text-2xl font-semibold text-white">
+                Welcome to Exop
+              </h1>
+              <p className="mt-1 text-sm text-gray-400">
+                Your intelligent financial management companion
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+              <div className="lg:col-span-2">
+                <LiveTransactions />
+              </div>
+              <div className="space-y-8">
+                <div className="bg-white rounded-lg shadow">
+                  <div className="px-4 py-5 sm:p-6">
+                    <h3 className="text-lg font-medium leading-6 text-gray-900 mb-4">
+                      Financial Tips
+                    </h3>
+                    <ul className="space-y-4">
+                      <li className="flex space-x-3">
+                        <svg
+                          className="flex-shrink-0 h-5 w-5 text-green-500"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-sm text-gray-500">
+                          Set up automatic savings to reach your goals faster
+                        </span>
+                      </li>
+                      <li className="flex space-x-3">
+                        <svg
+                          className="flex-shrink-0 h-5 w-5 text-green-500"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-sm text-gray-500">
+                          Diversify your investments to minimize risk
+                        </span>
+                      </li>
+                      <li className="flex space-x-3">
+                        <svg
+                          className="flex-shrink-0 h-5 w-5 text-green-500"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-sm text-gray-500">
+                          Review your spending patterns regularly
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

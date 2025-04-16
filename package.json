@@ -3,25 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "concurrently \"next dev --turbopack\" \"ts-node src/lib/websocket-server.ts\"",
     "build": "next build",
-    "start": "next start",
+    "start": "concurrently \"next start\" \"ts-node src/lib/websocket-server.ts\"",
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.1.1",
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "@tailwindcss/forms": "^0.5.10",
+    "chart.js": "^4.4.0",
+    "next": "15.2.3",
     "react": "^19.0.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.3"
+    "ws": "^8.16.0",
+    "yahoo-finance2": "^2.9.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@types/ws": "^8.5.10",
+    "concurrently": "^8.2.2",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5"
   }
 }
